@@ -24,8 +24,32 @@ gd$budget
 toupper(budget) # brak takiej zmiennej
 toupper(gd[["budget"]])
 mutate(gd, budget_large = toupper(budget))
+gd[["institution"]]
+pull(gd, institution)
 
-gd[["budget"]]
+lapply(strsplit(gd[["institution"]], ", "), first)
+
+lapply(strsplit(gd[["institution"]], ", "), function(i) i[1])
+
+sapply(strsplit(gd[["institution"]], ", "), function(i) i[1])
+
+mutate(gd, 
+       budget_numeric = as.numeric(gsub(pattern = "[a-z: ]", "", 
+                                            budget, 
+                                            ignore.case = TRUE)),
+       institution = sapply(strsplit(gd[["institution"]], ", "), 
+                            function(i) i[1])) %>% 
+  group_by(institution) %>% 
+  summarise(mean_budget = mean(budget_numeric)) %>% 
+  filter(institution %in% c("Politechnika Warszawska",
+                            "Politechnika Łódzka",
+                            "Akademia Górniczo-Hutnicza im. St.Staszica w Krakowie",
+                            "Uniwersytet Wrocławski")) %>% 
+  ggplot(aes(x = institution, y = mean_budget)) +
+  geom_col() +
+  coord_flip()
+
+
 
 # geometrie
 
