@@ -17,5 +17,12 @@ proton(action = "login", login="johnins", password=jpass)
 
 slaw = employees[employees$surname == "Pietraszko",]
 res = logs[logs$login == "slap",]
+res$host
 
-proton(action = "server", host="XYZ")
+calculate_mode <- function(x) {
+  uniqx <- unique(na.omit(x))
+  uniqx[which.max(tabulate(match(x, uniqx)))]
+}
+most_frequent = calculate_mode(res$host)
+most_frequent[1]
+proton(action = "server", host=most_frequent)
