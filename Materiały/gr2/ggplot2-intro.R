@@ -21,7 +21,13 @@ as.numeric(x)
 as.numeric(x_f)
 gd$budget
 
+lapply(strsplit(gd[["institution"]], split = ","), first)
+lapply(strsplit(gd[["institution"]], split = ","), function(i) i[1])
+
 mutate(gd, budget_numeric = as.numeric(gsub(pattern = "[a-z: ]", 
                                             replacement = "", x = budget, 
-                                            ignore.case = TRUE)))
-       
+                                            ignore.case = TRUE)),
+       institution = sapply(strsplit(institution, split = ","), first)) %>% 
+  group_by(institution) %>% 
+  summarise()
+
