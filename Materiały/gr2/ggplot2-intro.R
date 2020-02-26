@@ -37,3 +37,16 @@ mutate(gd, budget_numeric = as.numeric(gsub(pattern = "[a-z: ]",
   ggplot(mapping = aes(x = institution, y = cum_budget)) +
   geom_col()
 
+panel_budget <- mutate(gd, budget_numeric = as.numeric(gsub(pattern = "[a-z: ]", 
+                                            replacement = "", x = budget, 
+                                            ignore.case = TRUE)),
+       subpanel = sapply(strsplit(gd[["subpanel"]], " "), first)) %>% 
+  group_by(subpanel) %>% 
+  summarise(mean_budget = mean(budget_numeric)) %>% 
+  mutate(panel = gsub(pattern = "[0-9]", replacement = "", x = subpanel)) 
+
+ggplot(data = panel_budget, aes(x = subpanel, y = mean_budget)) +
+  geom_col() +
+  facet_wrap(~ panel, scales = "free_x")
+
+
