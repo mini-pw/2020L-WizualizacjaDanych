@@ -29,5 +29,11 @@ mutate(gd, budget_numeric = as.numeric(gsub(pattern = "[a-z: ]",
                                             ignore.case = TRUE)),
        institution = sapply(strsplit(institution, split = ","), first)) %>% 
   group_by(institution) %>% 
-  summarise()
+  summarise(cum_budget = sum(budget_numeric)) %>% 
+  filter(institution %in% c("Politechnika Warszawska",
+                            "Uniwersytet Warszawski",
+                            "Uniwersytet Wrocławski",
+                            "Politechnika Wrocławska")) %>% 
+  ggplot(mapping = aes(x = institution, y = cum_budget)) +
+  geom_col()
 
