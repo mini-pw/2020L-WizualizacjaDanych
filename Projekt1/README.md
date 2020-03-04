@@ -11,7 +11,7 @@ Każdy zespół powinien przypisać się do jednego z zaproponowanych tematów d
 
 ## Tematy projektu
 
-Celem projektu jest przygotowanie [https://en.wikipedia.org/wiki/Infographic](infografiki) na jeden z zadanych tematów.
+Celem projektu jest przygotowanie [infografiki](https://en.wikipedia.org/wiki/Infographic) na jeden z zadanych tematów.
 
 1. Rodzaje grantów NCN: cel, wymogi, warunki finansowanie, liczba edycji, jak często są otwierane.
 2. Zmiany wymagań i możliwości finansowania oferowanych przez różne edycje grantów OPUS. Ile wniosków jest finansowanych w każdej edycji, ile osób aplikuje w każdej edycji?
@@ -31,3 +31,5 @@ Celem projektu jest przygotowanie [https://en.wikipedia.org/wiki/Infographic](in
 ### Temat 4
 
 ### Temat 5
+
+### Temat 6
