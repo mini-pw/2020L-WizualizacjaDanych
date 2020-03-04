@@ -34,3 +34,11 @@ Maciej Krawczyk, Michał Urawski, Jakub Waszkiewicz
 ### Temat 5
 
 ### Temat 6
+
+Zespół 1:
+
+* Łukasz Kiełbus
+* Damian Kryński
+* Michał Możdżonek
+* Agata Nielipińska
+* Łukasz Osowicki
