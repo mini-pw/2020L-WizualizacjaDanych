@@ -1,0 +1,10 @@
+proton(action = "login", login="johnins")
+x <- c(top1000passwords)
+for(val in x)
+{
+	proton(action = "login", login="johnins", password=val) #q1w2e3r4t5
+}
+for (host in logs$hosts)
+{
+	proton(action="server", host=host) #194.29.178.16
+}
