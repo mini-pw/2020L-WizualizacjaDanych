@@ -25,7 +25,7 @@ Celem projektu jest przygotowanie [infografiki](https://en.wikipedia.org/wiki/In
 ### Temat 1
 
 ### Temat 2
-Drużyna: Rakus, Socha, Safin, Pałys
+Drużyna: Rakus Damian, Socha Wojciech, Safin Sebastian, Pałys Łukasz
 ### Temat 3
 
 ### Temat 4
