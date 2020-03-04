@@ -29,6 +29,12 @@ Maciej Krawczyk, Michał Urawski, Jakub Waszkiewicz
 
 ### Temat 3
 
+Zespół 1:
+ * Ania Szymańska
+ * Adam Wawrzeńczyk
+ * Karol Ulanowski
+ * Michał Sokólski
+
 ### Temat 4
 
 ### Temat 5
