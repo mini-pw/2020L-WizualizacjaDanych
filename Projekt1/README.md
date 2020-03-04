@@ -25,6 +25,7 @@ Celem projektu jest przygotowanie [infografiki](https://en.wikipedia.org/wiki/In
 ### Temat 1
 
 ### Temat 2
+Maciej Krawczyk, Michał Urawski, Jakub Waszkiewicz
 
 ### Temat 3
 
