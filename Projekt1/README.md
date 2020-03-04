@@ -25,11 +25,32 @@ Celem projektu jest przygotowanie [infografiki](https://en.wikipedia.org/wiki/In
 ### Temat 1
 
 ### Temat 2
-Drużyna: Rakus Damian, Socha Wojciech, Safin Sebastian, Pałys Łukasz
+
+Zespół 1: Rakus Damian, Socha Wojciech, Safin Sebastian, Pałys Łukasz
+
+Zespół 2: Maciej Krawczyk, Michał Urawski, Jakub Waszkiewicz
+
 ### Temat 3
+
+Zespół 1:
+ * Ania Szymańska
+ * Adam Wawrzeńczyk
+ * Karol Ulanowski
+ * Michał Sokólski
 
 ### Temat 4
 
 ### Temat 5
 
 ### Temat 6
+
+Zespół 1:
+
+* Łukasz Kiełbus
+* Damian Kryński
+* Michał Możdżonek
+* Agata Nielipińska
+* Łukasz Osowicki
+
+Zespół 2:
+Krzysztof Palczewski, Franek Grymuła, Krzysztof Spaliński, Renard Korzeniowski, Józef Jasek
