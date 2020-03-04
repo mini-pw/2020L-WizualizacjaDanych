@@ -42,3 +42,6 @@ Zespół 1:
 * Michał Możdżonek
 * Agata Nielipińska
 * Łukasz Osowicki
+
+Zespół 2:
+Krzysztof Palczewski, Franek Grymuła, Krzysztof Spaliński, Renard Korzeniowski, Józef Jasek
