@@ -25,6 +25,7 @@ Celem projektu jest przygotowanie [infografiki](https://en.wikipedia.org/wiki/In
 ### Temat 1
 
 ### Temat 2
+Maciej Krawczyk, Michał Urawski, Jakub Waszkiewicz
 
 ### Temat 3
 
@@ -33,3 +34,14 @@ Celem projektu jest przygotowanie [infografiki](https://en.wikipedia.org/wiki/In
 ### Temat 5
 
 ### Temat 6
+
+Zespół 1:
+
+* Łukasz Kiełbus
+* Damian Kryński
+* Michał Możdżonek
+* Agata Nielipińska
+* Łukasz Osowicki
+
+Zespół 2:
+Krzysztof Palczewski, Franek Grymuła, Krzysztof Spaliński, Renard Korzeniowski, Józef Jasek
