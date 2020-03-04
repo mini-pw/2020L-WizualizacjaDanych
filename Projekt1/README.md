@@ -25,7 +25,10 @@ Celem projektu jest przygotowanie [infografiki](https://en.wikipedia.org/wiki/In
 ### Temat 1
 
 ### Temat 2
-Maciej Krawczyk, Michał Urawski, Jakub Waszkiewicz
+
+Zespół 1: Rakus Damian, Socha Wojciech, Safin Sebastian, Pałys Łukasz
+
+Zespół 2: Maciej Krawczyk, Michał Urawski, Jakub Waszkiewicz
 
 ### Temat 3
 
