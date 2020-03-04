@@ -1,7 +1,7 @@
 library(ggplot2)
 library(dplyr)
 
-gd <- read.csv("./data/grants_small.csv", stringsAsFactors = FALSE, fileEncoding = "UTF-8")
+gd <- read.csv("./data/grants_small.csv", stringsAsFactors = FALSE)
 # edit(gd)
 # summary(gd)
 
