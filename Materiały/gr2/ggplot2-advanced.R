@@ -35,3 +35,11 @@ ggplot(grants_df, aes(x = type, fill = panel)) +
 filter(grants_df, type %in% c("OPUS", "PRELUDIUM", "SONATA")) %>% 
   ggplot(aes(x = type, fill = panel)) +
   geom_bar(position = "dodge")
+
+filter(grants_df, type %in% c("OPUS", "PRELUDIUM", "SONATA")) %>% 
+  group_by(type, panel) %>% 
+  summarise(count = length(panel)) %>% 
+  mutate(prop = count/sum(count)) %>% 
+  ggplot(aes(x = type, y = prop, fill = panel)) +
+  geom_bar(stat = "identity") # geom_col
+  
