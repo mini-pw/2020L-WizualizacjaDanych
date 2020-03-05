@@ -39,6 +39,7 @@ Zespół 1:
  * Adam Wawrzeńczyk
  * Karol Ulanowski
  * Michał Sokólski
+ * Tomek Zalewski
 
 ### Temat 4
 
