@@ -30,7 +30,7 @@ Zespół 1: Jakub Kała, Maciej Pawłowski, Michał Dyczko
 
 Zespół 1: Rakus Damian, Socha Wojciech, Safin Sebastian, Pałys Łukasz
 
-Zespół 2: Maciej Krawczyk, Michał Urawski, Jakub Waszkiewicz
+Zespół 2: Maciej Krawczyk, Michał Urawski, Jakub Waszkiewicz, Tomasz Nawrocki, Wojciech Zieliński
 
 ### Temat 3
 
