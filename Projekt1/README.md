@@ -24,10 +24,29 @@ Celem projektu jest przygotowanie [infografiki](https://en.wikipedia.org/wiki/In
 
 ### Temat 1
 
+Zespół 1: Jakub Kała, Maciej Pawłowski, Michał Dyczko
+
 ### Temat 2
-Maciej Krawczyk, Michał Urawski, Jakub Waszkiewicz
+
+Zespół 1: Rakus Damian, Socha Wojciech, Safin Sebastian, Pałys Łukasz
+
+Zespół 2: Maciej Krawczyk, Michał Urawski, Jakub Waszkiewicz, Tomasz Nawrocki, Wojciech Zieliński
 
 ### Temat 3
+
+Zespół 1:
+ * Ania Szymańska
+ * Adam Wawrzeńczyk
+ * Karol Ulanowski
+ * Michał Sokólski
+ * Tomek Zalewski
+ 
+ Zespół 2:
+ * Michał Rdzany
+ * Piotr Sowiński
+ * Maciej Wasiak
+ * Krzysztof Więcław
+ * Marcin Zakrzewski
 
 ### Temat 4
 
