@@ -49,6 +49,11 @@ Zespół 1:
  * Marcin Zakrzewski
 
 ### Temat 4
+Zespół 1:
+* Igor Marczak
+* Jeremiasz Wołosiuk
+* Michał Bortkiewicz
+* Przemysław Kaleta
 
 ### Temat 5
 
