@@ -28,7 +28,7 @@ Zespół 1: Jakub Kała, Maciej Pawłowski, Michał Dyczko
 
 ### Temat 2
 
-Zespół 1: Rakus Damian, Socha Wojciech, Safin Sebastian, Pałys Łukasz
+Zespół 1: Rakus Damian, Socha Wojciech, Safin Sebastian, Pałys Łukasz, Ruta Kamil
 
 Zespół 2: Maciej Krawczyk, Michał Urawski, Jakub Waszkiewicz, Tomasz Nawrocki, Wojciech Zieliński
 
