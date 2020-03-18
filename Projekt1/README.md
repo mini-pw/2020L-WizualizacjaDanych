@@ -7,7 +7,7 @@ Projekty można realizować z osobami z innej grupy ćwiczeniowej w grupie do 5 
  - od 0 do 25 punktów za dodatkowy wysiłek włożony w projekt (np. porównanie z innymi, istniejącymi rozwiązaniami).
  - od 0 do 20 punktów za ciekawą prezentację projektu podczas wykładu (czas prezentacji: 5 min).
 
-Każdy zespół powinien przypisać się do jednego z zaproponowanych tematów do 9.03.2020 poprzez PR do tego pliku. Jeden temat może być realizowany przez maksymalnie dwa zespoły. Rezultaty prac będą prezentowane na wykładzie 1.04.2020.
+Każdy zespół powinien przypisać się do jednego z zaproponowanych tematów do 9.03.2020 poprzez PR do tego pliku. Jeden temat może być realizowany przez maksymalnie dwa zespoły. Rezultaty prac będą prezentowane na wykładzie 8.04.2020 na Google Meet.
 
 ## Tematy projektu
 
