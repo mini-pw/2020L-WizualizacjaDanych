@@ -1,0 +1,123 @@
+---
+title: "Błędy w wizualizacjach"
+author: "Michał Burdukiewicz"
+date: "25-03-2020"
+output: 
+  ioslides_presentation:
+    theme: "simplex"
+---
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+<style>
+slides > slide {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+</style>
+
+
+```{r setup, include=FALSE}
+library(knitr)
+library(rgl)
+library(ggplot2)
+library(plotly)
+library(dplyr)
+library(patchwork)
+library(ggthemes)
+opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+knit_hooks$set(webgl = hook_webgl)
+data("midwest", package = "ggplot2")
+options(scipen=999)  # turn-off scientific notation like 1e+48
+theme_set(theme_bw())  # pre-set the bw theme.
+```
+
+## Minikonsultacje
+
+W poniedziałki i czwartki w godzinach 13:30 - 14:15 sprawdzam i odpisuję na slacku przedmiotu.
+
+## Wizualizacje i prawda
+
+<img src="https://upload.wikimedia.org/wikipedia/en/2/2a/How_to_Lie_with_Statistics.jpg" width="300px">
+
+How to Lie with Statistics, Darrell Huff
+
+## Niewłaściwa metoda wizualizacji
+
+<img src="https://undullify.com/wp-content/uploads/2016/05/data-viz-mistakes-4-impossible-comparisons.png" width="350px" class="center">
+
+## Niewłaściwa metoda wizualizacji
+
+<img src="https://deliveryimages.acm.org/10.1145/3240000/3231772/ins03.gif" width="200px" class="center">
+
+## Niewłaściwa metoda wizualizacji
+
+<img src="https://miro.medium.com/max/2560/1*9GzHVtm4y_LeVmFCjqV3Ww.png" width="700px" class="center">
+
+## Złe wizualizacje
+
+<img src="https://www.datapine.com/blog/wp-content/uploads/2015/10/Percent-of-Job-Loses-Relative-to-Peak-Employment-Month.jpg" width="400px" class="center">
+
+Zbyt duża ilość informacji na jednym wykresie.
+
+## Korelacje i współwystępowanie
+
+<img src="https://victoriabensteadhume.files.wordpress.com/2017/06/chart.jpeg" width="700px">
+
+## Trzeci wymiar
+
+<img src="https://datavizproject.com/wp-content/uploads/2017/08/Sk%C3%A6rmbillede-2017-08-31-kl.-17.21.12.png" width="600px">
+
+## Wykresy kołowe
+
+<img src="https://support.content.office.net/en-us/media/4ffba23f-576a-4002-b39f-bbd0d293c198.gif" width="600px">
+
+## Wykresy kołowe
+
+<img src="http://images.powershow.com/powerpoint-slide-exploded-pie-chart-3d-multicolor-data-driven-cg-59-1.jpg" width="600px">
+
+## Ucięte osie
+
+<img src="https://venngage-wordpress.s3.amazonaws.com/uploads/2017/08/misleading-graphs-4.png" width="600px">
+
+## Ucięte osie
+
+<img src="https://peltiertech.com/images/2011-11/Ybroken.png" width="600px">
+
+## Kolory 
+
+<a href="http://www.asawicki.info/files/Rules%20to%20Make%20Image%20Looking%20Good%20on%20Projector%201.jpg"><img src="http://www.asawicki.info/files/Rules%20to%20Make%20Image%20Looking%20Good%20on%20Projector%201.jpg" width="700px"></a>
+
+Źródło: http://www.asawicki.info/
+
+## Kolory 
+
+<a href="http://www.asawicki.info/files/Rules%20to%20Make%20Image%20Looking%20Good%20on%20Projector%202.jpg"><img src="http://www.asawicki.info/files/Rules%20to%20Make%20Image%20Looking%20Good%20on%20Projector%202.jpg" width="700px"></a>
+
+Źródło: http://www.asawicki.info/
+
+## Kolory
+
+<a href="http://www.asawicki.info/files/Rules%20to%20Make%20Image%20Looking%20Good%20on%20Projector%203.jpg"><img src="http://www.asawicki.info/files/Rules%20to%20Make%20Image%20Looking%20Good%20on%20Projector%203.jpg" width="700px"></a>
+
+Źródło: http://www.asawicki.info/
+
+## Widzenie barwne
+
+https://www.color-blindness.com/coblis-color-blindness-simulator/
+
+## Color brewer
+
+https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3
+
+W R: pakiet RColorBrewer.
+
+W Pythonie: seaborn, https://github.com/dsc/colorbrewer-python
