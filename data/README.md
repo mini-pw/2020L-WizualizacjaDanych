@@ -23,3 +23,11 @@ Deskryptory projektów z bazy Narodowego Centrum Nauki.
  - **descriptor**: podpanel https://www.ncn.gov.pl/finansowanie-nauki/panele-ncn.
  
 [Źródła paneli NCN](https://www.granty-na-badania.com/2013/06/skad-ncn-wzia-panele-naukowe.html#.Xm6Uit-YU38)
+
+
+### grants_institution.csv
+
+Instytucje, które uzyskały grant Narodowego Centrum Nauki.
+
+ - **id**: id projektu.
+ - **correct_name**: nazwa instytucji.
