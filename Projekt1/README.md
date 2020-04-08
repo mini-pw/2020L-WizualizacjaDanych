@@ -4,10 +4,10 @@ Projekty można realizować z osobami z innej grupy ćwiczeniowej w grupie do 5 
 
  - 5 punktów za każdą prezentację postępów w projekcie podczas spotkania projektowego. Za każdą konsultację uznaje się przedyskutowanie z prowadzącym postępów w pracy nad projektem podczas spotkania projektowego. 
  - od 0 do 40 punktów za poprawność projektu (np. starannie wykonane wykresy).
- - od 0 do 25 punktów za dodatkowy wysiłek włożony w projekt (np. porównanie z innymi, istniejącymi rozwiązaniami).
+ - od 0 do 25 punktów za dodatkowy wysiłek włożony w projekt (np. wyszukanie innych danych istotnych dla kompletności infografiki).
  - od 0 do 20 punktów za ciekawą prezentację projektu podczas wykładu (czas prezentacji: 5 min).
 
-Każdy zespół powinien przypisać się do jednego z zaproponowanych tematów do 9.03.2020 poprzez PR do tego pliku. Jeden temat może być realizowany przez maksymalnie dwa zespoły. Rezultaty prac będą prezentowane na wykładzie 1.04.2020.
+Każdy zespół powinien przypisać się do jednego z zaproponowanych tematów do 9.03.2020 poprzez PR do tego pliku. Jeden temat może być realizowany przez maksymalnie dwa zespoły. Rezultaty prac będą prezentowane na wykładzie 8.04.2020 na Google Meet.
 
 ## Tematy projektu
 
@@ -24,12 +24,48 @@ Celem projektu jest przygotowanie [infografiki](https://en.wikipedia.org/wiki/In
 
 ### Temat 1
 
+Zespół 1: Jakub Kała, Maciej Pawłowski, Michał Dyczko
+
 ### Temat 2
-Drużyna 1: Rakus Damian, Socha Wojciech, Safin Sebastian, Pałys Łukasz
+
+Zespół 1: Rakus Damian, Socha Wojciech, Safin Sebastian, Pałys Łukasz, Ruta Kamil
+
+Zespół 2: Maciej Krawczyk, Michał Urawski, Jakub Waszkiewicz, Tomasz Nawrocki, Wojciech Zieliński
+
 ### Temat 3
 
+Zespół 1:
+ * Ania Szymańska
+ * Adam Wawrzeńczyk
+ * Karol Ulanowski
+ * Michał Sokólski
+ * Tomek Zalewski
+ 
+ Zespół 2:
+ * Michał Rdzany
+ * Piotr Sowiński
+ * Maciej Wasiak
+ * Krzysztof Więcław
+ * Marcin Zakrzewski
+
 ### Temat 4
+Zespół 1:
+* Igor Marczak
+* Jeremiasz Wołosiuk
+* Michał Bortkiewicz
+* Przemysław Kaleta
 
 ### Temat 5
 
 ### Temat 6
+
+Zespół 1:
+
+* Łukasz Kiełbus
+* Damian Kryński
+* Michał Możdżonek
+* Agata Nielipińska
+* Łukasz Osowicki
+
+Zespół 2:
+Krzysztof Palczewski, Franek Grymuła, Krzysztof Spaliński, Renard Korzeniowski, Józef Jasek
