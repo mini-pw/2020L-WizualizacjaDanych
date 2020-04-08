@@ -1,4 +1,4 @@
-Temat 4 - grupa 1
+Temat 4 - grupa 1  
 Granty Sonata
 
 Skład zespołu:
