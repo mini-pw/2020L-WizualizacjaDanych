@@ -8,12 +8,16 @@ ui <- fluidPage(
 
 server <- function(input, output) {
   
-  output[["point_table"]] <- renderTable({
+  point_df <- reactive({
     data.frame(x = 1L:10, y = rnorm(10))
   })
   
+  output[["point_table"]] <- renderTable({
+    point_df()
+  })
+  
   output[["point_plot"]] <- renderPlot({
-    ggplot(data = data.frame(x = 1L:10, y = rnorm(10)),
+    ggplot(data = point_df(),
            aes(x = x, y = y)) +
       geom_point()
   }) 
