@@ -13,6 +13,7 @@ ui <- fluidPage(
   ),
   mainPanel = mainPanel(
     plotOutput("point_plot", click = "plot_click"),
+    verbatimTextOutput("clicked_points_rv"),
     tableOutput("point_table"),
     verbatimTextOutput("plot_click_value")) 
   )
@@ -49,6 +50,10 @@ server <- function(input, output, session) {
   
   output[["point_table"]] <- renderTable({
     point_df_clicked() 
+  })
+  
+  output[["clicked_points_rv"]] <- renderPrint({
+    selected_points[["selected"]]
   })
   
   output[["point_plot"]] <- renderPlot({
