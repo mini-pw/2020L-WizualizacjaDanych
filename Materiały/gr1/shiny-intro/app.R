@@ -1,6 +1,8 @@
 library(shiny)
 library(ggplot2)
 
+# runApp("./Materiały/gr1/shiny-intro/", display.mode = "showcase")
+
 ui <- fluidPage(
   sidebarLayout(sidebarPanel = sidebarPanel(
     textInput("plot_title", "Specify plot title"),
@@ -15,7 +17,14 @@ ui <- fluidPage(
   )
 )
 
-server <- function(input, output) {
+server <- function(input, output, session) {
+  
+  
+  observeEvent(input[["number_points"]], {
+    updateSliderInput(session, "axis_x_range", "Specify range", 
+                      min = 0, max = input[["number_points"]], 
+                      value = c(0, input[["number_points"]]))
+  })
   
   point_df <- reactive({
     data.frame(x = 1L:input[["number_points"]], 
