@@ -12,7 +12,8 @@ ui <- fluidPage(
                  min = 5, max = 20, value = 10)
   ),
   mainPanel = mainPanel(
-    plotOutput("point_plot"),
+    plotOutput("point_plot", click = "plot_click"),
+    verbatimTextOutput("plot_click_value"), 
     tableOutput("point_table"))
   )
 )
@@ -31,8 +32,13 @@ server <- function(input, output, session) {
                y = rnorm(input[["number_points"]]))
   })
   
+  point_df_clicked <- reactive({
+    nearPoints(df = point_df(), coordinfo = input[["plot_click"]], 
+               allRows = TRUE)
+  })
+  
   output[["point_table"]] <- renderTable({
-    point_df()
+    point_df_clicked()
   })
   
   output[["point_plot"]] <- renderPlot({
@@ -42,6 +48,10 @@ server <- function(input, output, session) {
       coord_cartesian(xlim = input[["axis_x_range"]]) +
       ggtitle(input[["plot_title"]])
   }) 
+  
+  output[["plot_click_value"]] <- renderPrint({
+    input[["plot_click"]]
+  })
   
 }
 
