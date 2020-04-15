@@ -26,6 +26,8 @@ Każdy zespół powinien przypisać się do jednego z zaproponowanych tematów d
 ### Temat 2
 Zespół 1: Damian Rakus, Michał Urawski, Karol Ulanowski, Damian Kryński, Maciej Wasiak
 
+Zespół 2: Michał Możdżonek, Jakub Waszkiewicz, Adam Wawrzeńczyk, Marcin Zakrzewski
+
 ### Temat 3
 
 
