@@ -13,13 +13,23 @@ ui <- fluidPage(
   ),
   mainPanel = mainPanel(
     plotOutput("point_plot", click = "plot_click"),
-    verbatimTextOutput("plot_click_value"), 
-    tableOutput("point_table"))
+    tableOutput("point_table"),
+    verbatimTextOutput("plot_click_value")) 
   )
 )
 
 server <- function(input, output, session) {
   
+  selected_points <- reactiveValues(
+    selected = c()
+  )
+  
+  observeEvent(input[["plot_click"]], {
+    clicked_points <- nearPoints(df = point_df(), coordinfo = input[["plot_click"]], 
+               allRows = TRUE, maxpoints = 1)
+    selected_points[["selected"]] <- c(selected_points[["selected"]],
+                                       clicked_points[clicked_points[["selected_"]], "x"])
+  })
   
   observeEvent(input[["number_points"]], {
     updateSliderInput(session, "axis_x_range", "Specify range", 
@@ -33,17 +43,17 @@ server <- function(input, output, session) {
   })
   
   point_df_clicked <- reactive({
-    nearPoints(df = point_df(), coordinfo = input[["plot_click"]], 
-               allRows = TRUE)
+    cbind(point_df(), 
+          selected_point = point_df()[["x"]] %in% selected_points[["selected"]])
   })
   
   output[["point_table"]] <- renderTable({
-    point_df_clicked()
+    point_df_clicked() 
   })
   
   output[["point_plot"]] <- renderPlot({
-    ggplot(data = point_df(),
-           aes(x = x, y = y)) +
+    ggplot(data = point_df_clicked(),
+           aes(x = x, y = y, size = selected_point, color = selected_point)) +
       geom_point() +
       coord_cartesian(xlim = input[["axis_x_range"]]) +
       ggtitle(input[["plot_title"]])
