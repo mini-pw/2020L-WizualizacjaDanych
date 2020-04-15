@@ -5,7 +5,9 @@ ui <- fluidPage(
   sidebarLayout(sidebarPanel = sidebarPanel(
     textInput("plot_title", "Specify plot title"),
     sliderInput("axis_x_range", "Specify range", 
-                min = 0, max = 10, value = c(0, 10))
+                min = 0, max = 10, value = c(0, 10)),
+    numericInput("number_points", "How many points?", 
+                 min = 5, max = 20, value = 10)
   ),
   mainPanel = mainPanel(
     plotOutput("point_plot"),
@@ -16,7 +18,8 @@ ui <- fluidPage(
 server <- function(input, output) {
   
   point_df <- reactive({
-    data.frame(x = 1L:10, y = rnorm(10))
+    data.frame(x = 1L:input[["number_points"]], 
+               y = rnorm(input[["number_points"]]))
   })
   
   output[["point_table"]] <- renderTable({
