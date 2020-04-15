@@ -2,8 +2,13 @@ library(shiny)
 library(ggplot2)
 
 ui <- fluidPage(
-  plotOutput("point_plot"),
-  tableOutput("point_table")
+  sidebarLayout(sidebarPanel = sidebarPanel(
+    textInput("plot_title", "Specify plot title")
+  ),
+  mainPanel = mainPanel(
+    plotOutput("point_plot"),
+    tableOutput("point_table"))
+  )
 )
 
 server <- function(input, output) {
