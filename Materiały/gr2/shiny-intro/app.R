@@ -1,15 +1,26 @@
 library(shiny)
 library(ggplot2)
+library(shinythemes)
 
 ui <- fluidPage(title = "My first Shiny app",
-                selectInput("point_color", label = "Select color", 
-                            choices = c("black", "red", "#eeeeee",
-                                        "#F5F5DC", "#C2B280")),
-                sliderInput("number_of_points", "How many points?", 
-                            min = 5, max = 50, value = 10),
-                plotOutput("point_plot", click = "point_click"),
-                tableOutput("point_click_table"), 
-                verbatimTextOutput("point_click_value")
+                theme = shinytheme("slate"),
+                sidebarLayout(
+                  sidebarPanel(
+                    h1("Example"),
+                    selectInput("point_color", label = "Select color", 
+                                choices = c("black", "red", "#eeeeee",
+                                            "#F5F5DC", "#C2B280")),
+                    sliderInput("number_of_points", "How many points?", 
+                                min = 5, max = 50, value = 10)
+                  ), 
+                  mainPanel(tabsetPanel(
+                    tabPanel("Plot", plotOutput("point_plot", click = "point_click")),
+                    tabPanel("Tables and stuff", tableOutput("point_click_table"), 
+                             verbatimTextOutput("point_click_value")),
+                    tabPanel("Markdown example", includeMarkdown("example.md")))
+                  )
+                )
+                
 )
 
 
@@ -30,9 +41,9 @@ server <- function(input, output) {
     
     if(length(np_df[np_df[, "selected_"], "x"]) > 0) 
       if(length(clicked_points[["selected"]]) > 2) 
-       if(clicked_points[["selected"]][length(clicked_points[["selected"]])] == clicked_points[["selected"]][length(clicked_points[["selected"]]) - 1])
-         clicked_points[["selected"]] <- clicked_points[["selected"]][-c(length(clicked_points[["selected"]]),
-                                                                         length(clicked_points[["selected"]]) - 1)]
+        if(clicked_points[["selected"]][length(clicked_points[["selected"]])] == clicked_points[["selected"]][length(clicked_points[["selected"]]) - 1])
+          clicked_points[["selected"]] <- clicked_points[["selected"]][-c(length(clicked_points[["selected"]]),
+                                                                          length(clicked_points[["selected"]]) - 1)]
     
   })
   
