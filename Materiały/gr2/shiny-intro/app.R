@@ -21,10 +21,19 @@ server <- function(input, output) {
   
   observeEvent(input[["point_click"]], {
     np_df <- nearPoints(point_df(), input[["point_click"]], 
-               maxpoints = 1, allRows = TRUE)
+                        maxpoints = 1, allRows = TRUE)
+    # if(!is.null(input[["point_click"]]))
+    #   browser()
     
     clicked_points[["selected"]] <- c(clicked_points[["selected"]],
                                       np_df[np_df[, "selected_"], "x"])
+    
+    if(length(np_df[np_df[, "selected_"], "x"]) > 0) 
+      if(length(clicked_points[["selected"]]) > 2) 
+       if(clicked_points[["selected"]][length(clicked_points[["selected"]])] == clicked_points[["selected"]][length(clicked_points[["selected"]]) - 1])
+         clicked_points[["selected"]] <- clicked_points[["selected"]][-c(length(clicked_points[["selected"]]),
+                                                                         length(clicked_points[["selected"]]) - 1)]
+    
   })
   
   point_df <- reactive({
