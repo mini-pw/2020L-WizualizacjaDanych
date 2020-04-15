@@ -29,13 +29,19 @@ server <- function(input, output, session) {
     clicked_points <- nearPoints(df = point_df(), coordinfo = input[["plot_click"]], 
                                  allRows = TRUE, maxpoints = 1)
     
-    if(clicked_points[clicked_points[["selected_"]], "x"] %in% selected_points[["selected"]]) {
-      selected_points[["selected"]] <- setdiff(selected_points[["selected"]],
-                                               clicked_points[clicked_points[["selected_"]], "x"])
-    } else {
-      selected_points[["selected"]] <- c(selected_points[["selected"]],
-                                         clicked_points[clicked_points[["selected_"]], "x"])
+    # if(!is.null(input[["plot_click"]]))
+    #   browser()
+    if(length(clicked_points[clicked_points[["selected_"]], "x"]) > 0) {
+      if(clicked_points[clicked_points[["selected_"]], "x"] %in% selected_points[["selected"]]) {
+        selected_points[["selected"]] <- setdiff(selected_points[["selected"]],
+                                                 clicked_points[clicked_points[["selected_"]], "x"])
+      } else {
+        selected_points[["selected"]] <- c(selected_points[["selected"]],
+                                           clicked_points[clicked_points[["selected_"]], "x"])
+      }
     }
+    
+    
   })
   
   observeEvent(input[["number_points"]], {
