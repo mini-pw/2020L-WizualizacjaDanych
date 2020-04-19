@@ -31,7 +31,7 @@ Zespół 2: Michał Możdżonek, Jakub Waszkiewicz, Adam Wawrzeńczyk, Marcin Za
 Zespół 3: Franek Grymuła, Jeremiasz Wołosiuk, Łukasz Osowicki, Łukasz Pałys, Michał Dyczko
 
 ### Temat 3
-
+Zespół 1: Igor Marczak, Krzysztof Palczewski, Maciej Pawłowski, Sebastian Safin, Piotr Sowiński
 
 ## Zbiory danych
 
