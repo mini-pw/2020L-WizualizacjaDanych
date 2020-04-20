@@ -33,6 +33,8 @@ Zespół 3: Franek Grymuła, Jeremiasz Wołosiuk, Łukasz Osowicki, Łukasz Pał
 ### Temat 3
 Zespół 1: Igor Marczak, Krzysztof Palczewski, Maciej Pawłowski, Sebastian Safin, Piotr Sowiński
 
+Zespół 2: Agata Nielipińska, Michał Rdzany, Wojciech Socha, Anna Szymańska, Wojciech Zieliński
+
 ## Zbiory danych
 
 Zbiory danych z [Centralnej Ewidencji Działalnosci Gospodarczej](https://prod.ceidg.gov.pl/CEIDG/CEIDG.Public.UI/Search.aspx) będące punktem wyjścia w tym projekcie zostały przygotowane przez [Bartłomieja Karabana](https://www.linkedin.com/in/karaban/)  .
