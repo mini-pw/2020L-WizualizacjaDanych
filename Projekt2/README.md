@@ -33,7 +33,7 @@ Zespół 3: Franek Grymuła, Jeremiasz Wołosiuk, Łukasz Osowicki, Łukasz Pał
 ### Temat 3
 Zespół 1: Igor Marczak, Krzysztof Palczewski, Maciej Pawłowski, Sebastian Safin, Piotr Sowiński
 
-Zwspół 2: Agata Nielipińska, Michał Rdzany, Wojciech Socha, Anna Szymańska, Wojciech Zieliński
+Zespół 2: Agata Nielipińska, Michał Rdzany, Wojciech Socha, Anna Szymańska, Wojciech Zieliński
 
 ## Zbiory danych
 
