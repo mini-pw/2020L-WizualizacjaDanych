@@ -24,10 +24,14 @@ Każdy zespół powinien przypisać się do jednego z zaproponowanych tematów d
 
 
 ### Temat 2
+Zespół 1: Damian Rakus, Michał Urawski, Karol Ulanowski, Damian Kryński, Maciej Wasiak
 
+Zespół 2: Michał Możdżonek, Jakub Waszkiewicz, Adam Wawrzeńczyk, Marcin Zakrzewski
+
+Zespół 3: Franek Grymuła, Jeremiasz Wołosiuk, Łukasz Osowicki, Łukasz Pałys, Michał Dyczko
 
 ### Temat 3
-
+Zespół 1: Igor Marczak, Krzysztof Palczewski, Maciej Pawłowski, Sebastian Safin, Piotr Sowiński
 
 ## Zbiory danych
 

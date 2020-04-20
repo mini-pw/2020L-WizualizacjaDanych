@@ -1,21 +1,25 @@
 library(shiny)
 library(ggplot2)
+library(shinythemes)
 
 # runApp("./Materiały/gr1/shiny-intro/", display.mode = "showcase")
 
-ui <- fluidPage(
+ui <- fluidPage(theme = shinytheme("superhero"),
   sidebarLayout(sidebarPanel = sidebarPanel(
     textInput("plot_title", "Specify plot title"),
     sliderInput("axis_x_range", "Specify range", 
                 min = 0, max = 10, value = c(0, 10)),
     numericInput("number_points", "How many points?", 
-                 min = 5, max = 20, value = 10)
+                 min = 5, max = 20, value = 10),
+    includeMarkdown("readme.md")
   ),
   mainPanel = mainPanel(
-    plotOutput("point_plot", click = "plot_click"),
-    verbatimTextOutput("clicked_points_rv"),
-    tableOutput("point_table"),
-    verbatimTextOutput("plot_click_value")) 
+    tabsetPanel(
+      tabPanel("Plot", plotOutput("point_plot", click = "plot_click"),
+               verbatimTextOutput("clicked_points_rv"),
+               tableOutput("point_table")),
+      tabPanel("Click info", verbatimTextOutput("plot_click_value")))
+    )
   )
 )
 
@@ -27,9 +31,21 @@ server <- function(input, output, session) {
   
   observeEvent(input[["plot_click"]], {
     clicked_points <- nearPoints(df = point_df(), coordinfo = input[["plot_click"]], 
-               allRows = TRUE, maxpoints = 1)
-    selected_points[["selected"]] <- c(selected_points[["selected"]],
-                                       clicked_points[clicked_points[["selected_"]], "x"])
+                                 allRows = TRUE, maxpoints = 1)
+    
+    # if(!is.null(input[["plot_click"]]))
+    #   browser()
+    if(length(clicked_points[clicked_points[["selected_"]], "x"]) > 0) {
+      if(clicked_points[clicked_points[["selected_"]], "x"] %in% selected_points[["selected"]]) {
+        selected_points[["selected"]] <- setdiff(selected_points[["selected"]],
+                                                 clicked_points[clicked_points[["selected_"]], "x"])
+      } else {
+        selected_points[["selected"]] <- c(selected_points[["selected"]],
+                                           clicked_points[clicked_points[["selected_"]], "x"])
+      }
+    }
+    
+    
   })
   
   observeEvent(input[["number_points"]], {
