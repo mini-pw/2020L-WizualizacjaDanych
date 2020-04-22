@@ -21,7 +21,7 @@ Każdy zespół powinien przypisać się do jednego z zaproponowanych tematów d
 ## Zgłoszone zespoły
 
 ### Temat 1
-
+Zespół 1: Michał Bortkiewicz, Jakub Kała, Krzysztof Spaliński
 
 ### Temat 2
 Zespół 1: Damian Rakus, Michał Urawski, Karol Ulanowski, Damian Kryński, Maciej Wasiak
@@ -31,7 +31,11 @@ Zespół 2: Michał Możdżonek, Jakub Waszkiewicz, Adam Wawrzeńczyk, Marcin Za
 Zespół 3: Franek Grymuła, Jeremiasz Wołosiuk, Łukasz Osowicki, Łukasz Pałys, Michał Dyczko
 
 ### Temat 3
+Zespół 1: Igor Marczak, Krzysztof Palczewski, Maciej Pawłowski, Sebastian Safin, Piotr Sowiński
 
+Zespół 2: Agata Nielipińska, Michał Rdzany, Wojciech Socha, Anna Szymańska, Wojciech Zieliński
+
+Zespół 3: Łukasz Kiełbus, Tomasz Nawrocki, Kamil Ruta, Krzysztof Więcław
 
 ## Zbiory danych
 
