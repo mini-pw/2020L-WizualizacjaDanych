@@ -35,7 +35,7 @@ Zespół 1: Igor Marczak, Krzysztof Palczewski, Maciej Pawłowski, Sebastian Saf
 
 Zespół 2: Agata Nielipińska, Michał Rdzany, Wojciech Socha, Anna Szymańska, Wojciech Zieliński
 
-Zespół 3: Łukasz Kiełbus, Tomasz Nawrocki, Kamil Ruta, Krzysztof Więcław
+Zespół 3: Łukasz Kiełbus, Tomasz Nawrocki, Kamil Ruta, Krzysztof Więcław, Michał Sokólski
 
 ## Zbiory danych
 
