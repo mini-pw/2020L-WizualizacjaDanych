@@ -21,7 +21,9 @@ Każdy zespół powinien przypisać się do jednego z zaproponowanych tematów d
 ## Zgłoszone zespoły
 
 ### Temat 1
+
 Zespół 1: Michał Bortkiewicz, Jakub Kała, Krzysztof Spaliński
+
 Zespół 2: Józef Jasek, Przemysław Kaleta, Maciej Krawczyk, Tomasz Zalewski
 
 ### Temat 2
