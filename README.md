@@ -2,23 +2,23 @@ Strona przedmiotu [Wizualizacja danych 1120-DS000-MSP-0114](https://usosweb.usos
 
 ## Harmonogram
 
-| Data   | Wykład | Projekt/Laboratoria |   |   |
-|--------|--------|---------------------|---|---|
-| 26.02. |        | Wstęp do ggplot2    |   |   |
-| 04.03. |        | Projekt 1           |   |   |
-| 11.03. |        | Projekt 1           |   |   |
-| 18.03. |        | Projekt 1           |   |   |
-| 25.03. |        | Projekt 1           |   |   |
-| 01.04. |        | Projekt 1           |   |   |
-| 08.04. | Prezentacja projektu 1       |                     |   |   |
-| 15.04. |        | Wstęp do Shiny      |   |   |
-| 22.04. |        | Projekt 2           |   |   |
-| 06.05. |        | Projekt 2           |   |   |
-| 13.05. |        | Projekt 2           |   |   |
-| 20.05  | Prezentacja projektu 2       |                     |   |   |
-| 27.05  |        | Projekt 3           |   |   |
-| 03.06  |        | Projekt 3           |   |   |
-| 10.06  |        |                     |   |   |
+| Data   | Wykład | Projekt/Laboratoria | 
+|--------|--------|---------------------|
+| 26.02. |        | Wstęp do ggplot2    |
+| 04.03. |        | Projekt 1           |
+| 11.03. |        | Projekt 1           |
+| 18.03. |        | Projekt 1           |
+| 25.03. |        | Projekt 1           |
+| 01.04. |        | Projekt 1           |
+| 08.04. | Prezentacja projektu 1 |     |
+| 15.04. |        | Wstęp do Shiny      |
+| 22.04. |        | Projekt 2           |
+| 06.05. |        | Projekt 2           |
+| 13.05. |        | Projekt 2           |
+| 20.05  | Prezentacja projektu 2 |     |
+| 27.05  |        | Projekt 3           |
+| 03.06  |        | Projekt 3           |
+| 10.06  |        |                     |
 
 ## Warunki zaliczenia
 
