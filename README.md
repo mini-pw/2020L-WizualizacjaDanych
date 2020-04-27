@@ -4,15 +4,15 @@ Strona przedmiotu [Wizualizacja danych 1120-DS000-MSP-0114](https://usosweb.usos
 
 | Data   | Wykład | Projekt/Laboratoria | 
 |--------|--------|---------------------|
-| 26.02. |        | Wstęp do ggplot2    |
-| 04.03. |        | Projekt 1           |
+| 26.02. | Gramatyka grafiki | Wstęp do ggplot2    |
+| 04.03. | Infografiki | Projekt 1           |
 | 11.03. |        | Projekt 1           |
-| 18.03. |        | Projekt 1           |
-| 25.03. |        | Projekt 1           |
-| 01.04. |        | Projekt 1           |
+| 18.03. | Narzędzia do wizualizacji danych | Projekt 1           |
+| 25.03. | Błędy w wizualizacjach | Projekt 1           |
+| 01.04. | Rodzaje wizualizacji danych | Projekt 1           |
 | 08.04. | Prezentacja projektu 1 |     |
-| 15.04. |        | Wstęp do Shiny      |
-| 22.04. |        | Projekt 2           |
+| 15.04. | Interaktywne wizualizacje danych I | Wstęp do Shiny      |
+| 22.04. | Interaktywne wizualizacje danych II | Projekt 2           |
 | 06.05. |        | Projekt 2           |
 | 13.05. |        | Projekt 2           |
 | 20.05  | Prezentacja projektu 2 |     |
