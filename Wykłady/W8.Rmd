@@ -1,0 +1,160 @@
+---
+title: "Narzędzia do interaktywnych wizualizacji danych"
+author: "Michał Burdukiewicz"
+date: "22-04-2020"
+output: 
+  ioslides_presentation:
+    theme: "simplex"
+---
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+<style>
+slides > slide {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+</style>
+
+
+```{r setup, include=FALSE}
+library(knitr)
+library(rgl)
+library(ggplot2)
+library(plotly)
+library(dplyr)
+library(patchwork)
+library(ggthemes)
+opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+knit_hooks$set(webgl = hook_webgl)
+data("midwest", package = "ggplot2")
+options(scipen=999)  # turn-off scientific notation like 1e+48
+theme_set(theme_bw())  # pre-set the bw theme.
+```
+
+## Co to jest d3?
+
+Data Driven Documents: biblioteka do tworzenia interaktywnych grafik.
+
+## Przykłady d3
+
+[Wykresy liniowe](http://thestoryoftheseason.com/#).
+
+## Przykłady d3
+
+[Wykresy bąbelkowe](https://archive.nytimes.com/www.nytimes.com/interactive/2013/05/25/sunday-review/corporate-taxes.html).
+
+## Przykłady d3
+
+[Kartogramy](http://bl.ocks.org/stevenae/8362841).
+
+## Przykłady d3
+
+[Scrollytelling](https://bl.ocks.org/baronwatts/raw/2a50ae537d7c46670aa5eb30254ef751/).
+
+## Używanie d3
+
+Brak komponentów - funkcje zamiast komponentów.
+
+Przykład: brak funkcji do wykresów punktowych. Zamiast tego funkcja do rysowania punktów w dowolnym miejscu wykresu.
+
+```
+.append('svg')
+  .attr('height', 500)
+  .attr('width', 500)
+  .data(circles_data)
+  .enter()
+  .append("circle")
+  .selectAll("circle")
+  .attr("r", 20)
+  .attr("cx", function(d) { return d.x; })
+  .attr("cy", function(d) { return d.y; })
+```
+
+## Dlaczego w ten sposób
+
+```
+<svg width="500" height="500">
+<circle cx="25" cy="25" r="25"/>
+</svg>
+```
+
+## Zalety d3
+
+* dobra współpraca z SVG i [canvasem](https://github.com/xoor-io/d3-canvas-example).
+* tag path to najlepsza metoda do [rysowania arbitralnych kształtów](https://www.dashingd3js.com/svg-paths-and-d3js).
+* wpływ na każdy element obrazka.
+
+## Wady d3
+
+* wpływ na każdy element obrazka,
+* przetwarzanie danych.
+
+
+## Jak pracować z d3?
+
+d3 dla początkujących: wybrać zbliżony przykład/szablon i zaadoptować go do naszych potrzeb.
+
+https://bl.ocks.org/
+
+## Źródła
+
+* http://vadim.ogievetsky.com/IntroD3/#1
+* https://alignedleft.com/tutorials/d3/fundamentals
+* https://www.dashingd3js.com/
+
+## d3 i R 
+
+[Łatwe przesyłanie danych z R do d3](https://rstudio.github.io/r2d3/).
+
+## d3 i R 
+
+```{r,message=FALSE,echo=TRUE}
+r2d3::r2d3(data=c(0.3, 0.6, 0.8, 0.95, 0.40, 0.20), script = "barchart.js")
+```
+
+## d3 i Python
+
+[d3py](https://github.com/mikedewar/d3py): nie jest aktywnie wspierana.
+
+[py_d3](https://github.com/ResidentMario/py_d3): integracja Jupytera i d3.
+
+## Datatables
+
+https://datatables.net/
+
+## Przykłady
+
+```{r,message=FALSE,echo=FALSE}
+library(DT)
+options(DT.options = list(dom = "Brtip",
+                          buttons = c("copy", "csv", "excel", "print"),
+                          pageLength = 4
+))
+
+my_DT <- function(x, ...)
+  datatable(x, ..., escape = FALSE, extensions = 'Buttons', filter = "top", rownames = FALSE,
+            style = "bootstrap")
+
+my_DT(iris)
+```
+
+## pivotTable
+
+https://pivottable.js.org/examples/
+
+## pivotTable
+
+```{r,message=FALSE,echo=FALSE}
+library(rpivotTable)
+rpivotTable(iris,rows="Species", cols="Sepal.Width")
+```
+

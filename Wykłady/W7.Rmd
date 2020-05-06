@@ -1,0 +1,170 @@
+---
+title: "Interaktywne wizualizacje danych"
+author: "Michał Burdukiewicz"
+date: "22-04-2020"
+output: 
+  ioslides_presentation:
+    theme: "simplex"
+---
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+<style>
+slides > slide {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+</style>
+
+
+```{r setup, include=FALSE}
+library(knitr)
+library(rgl)
+library(ggplot2)
+library(plotly)
+library(dplyr)
+library(patchwork)
+library(ggthemes)
+opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+knit_hooks$set(webgl = hook_webgl)
+data("midwest", package = "ggplot2")
+options(scipen=999)  # turn-off scientific notation like 1e+48
+theme_set(theme_bw())  # pre-set the bw theme.
+```
+
+## Ankieta
+
+Proszę o wypełnienie ankiety (link na Slacku).
+
+## Linki do nagrań
+
+Postaram się dodać do końca tygodnia.
+
+## Projekt 2
+
+Celem projektu jest przygotowania aplikacji internetowej umożliwiającej eksplorację [zbiorów danych pozyskanych z Centralnej Ewidencji Działalnosci Gospodarczej](https://github.com/karabanb/ceidg_datasets/) w celu uzyskania odpowiedzi na pytania postawione w jednym z trzech tematów.
+
+## Projekt 2
+
+Projekty można realizować z osobami z innej grupy ćwiczeniowej w grupie do 5 osób. Nie wolno współpracować z osobami z którymi wykonywało się projekt 1. Za projekt 2 można otrzymać do 100 punktów z czego:
+
+ - 5 punktów za każdą prezentację postępów w projekcie podczas spotkania projektowego (22.04, 6.05, 13.05). Za każdą konsultację uznaje się przedyskutowanie z prowadzącym postępów w pracy nad projektem podczas spotkania projektowego. 
+ - od 0 do 30 punktów za poprawność projektu (np. starannie wykonane wykresy, dobrze zastosowana interaktywność, dostępność projektu w postaci narzędzia internetowego).
+ - od 0 do 25 punktów za dodatkowy wysiłek włożony w projekt (np. wyszukanie innych danych istotnych dla kompletności projektu).
+ - od 0 do 20 punktów za ciekawą prezentację projektu podczas wykładu (czas prezentacji: 5 min).
+ 
+Rezultaty prac będą prezentowane na wykładzie 20.05.2020 na Google Meet.
+
+## Projekt 2
+
+1. Jakie cechy dobrze różnicują firmy, które kontynuują działalność gospodarczą w okresie 12 miesięcy od tych, które działalności nie kontynuują? [zmienna **Target**]
+2. Jakie cechy wpływają na czas trwania "życia" firmy (utrzymania działalności gospodarczej firmy)? [zmienna **DurationOfExistenceInMonths**]
+3. Charakterystyka przestrzenna działalności gospodarczej. W jakich województwach/powiatach dominują jakie rodzaje działalności gospodarczych?
+
+## Interakcja
+
+"*Only 10–15% of people click on buttons*".
+
+Gregor Aisch, New York Times, podczas Information+ Conference, 2016.
+
+## Interakcja
+
+"*15% of readers isn’t nobody*".
+
+Gregor Aisch, New York Times, 2017.
+
+## Zastosowanie interakcji
+
+Kluczowa informacja na wykresie nie może być skryta przed użytkownikiem za pomocą interakcji.
+
+Interakcje powinny zawierać wyłącznie informacje doprecyzowujące główny przekaz.
+
+
+## Interaktywność
+
+Zbędna interaktywność wymaga od nas akcji w celu uzyskania podstawowych informacji.
+
+<img src="https://trinachi.github.io/data-design-builds/images/sections/05/ch19-06-pointless-hover.png" width="800px" class="center">
+
+Źródło: [Data + design](https://trinachi.github.io/data-design-builds/titlepage01.html)
+
+## Interaktywność
+
+Poprawnie użyta interaktywność ułatwia eksplorację danych.
+
+<img src="https://trinachi.github.io/data-design-builds/images/sections/05/ch19-07-interactive-exploration.png" width="450px" class="center">
+
+Źródło: [Data + design](https://trinachi.github.io/data-design-builds/titlepage01.html)
+
+## Przykład: tooltipy
+
+```{r}
+ggplotly(ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, group = Species)) +
+           geom_point() +
+           theme_bw()) 
+```
+
+Cel wizualizacji: zależność długości pręcika od długości słupka w podziale na gatunki irysów.
+
+## Przykład: tooltipy
+
+```{r}
+ggplotly(ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, color = Species)) +
+           geom_point() +
+           theme_bw()) 
+```
+
+Cel wizualizacji: zależność długości pręcika od długości słupka w podziale na gatunki irysów.
+
+## Przykład: tooltipy
+
+```{r}
+ggplotly(ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, shape = Species)) +
+           geom_point() +
+           theme_bw()) 
+```
+
+Cel wizualizacji: zależność długości pręcika od długości słupka w podziale na gatunki irysów.
+
+## Przykład: tooltipy
+
+```{r}
+ggplotly(ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, group = Species)) +
+           geom_point() +
+           theme_bw()) 
+```
+
+Cel wizualizacji: zależność długości pręcika od długości słupka <s>w podziale na gatunki irysów</s>.
+
+## Przykład: zbliżenie
+
+```{r}
+ggplotly(ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, color = Species)) +
+           geom_point() +
+           coord_cartesian(xlim = c(7, 8), ylim = c(4, 7)) +
+           theme_bw()) 
+```
+
+Cel wizualizacji: zależność długości pręcika od długości słupka w podziale na gatunki irysów.
+
+## Przykład: zbliżenie
+
+```{r}
+ggplotly(ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, color = Species)) +
+           geom_point() +
+           geom_rect(xmin = 7, xmax = 8, ymin = 4, ymax = 7, color = "black", fill = NA,
+                     linetype = "dashed") +
+           theme_bw()) 
+```
+
+Cel wizualizacji: zależność długości pręcika od długości słupka w podziale na gatunki irysów.
+
+
