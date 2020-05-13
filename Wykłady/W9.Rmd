@@ -32,8 +32,8 @@ slides > slide {
 
 ## Projekt 3
 
-W ramach projektu 2 należy przygotować aplikację internetową, która pozwala testować wpływ rozmaitych błędów wizualizacyjnych na percepcję danych przedstawionych na wykresie. 
-Aplikcja powinna zawierać przynajmniej **pięć** wykresów przedstawiających częste błędy wizualizacyjne (np. zbędny trzeci wymiar, wykresy kołowe) oraz pola w których użytkownik może zapisywać wartości odczytane z wykresu, a także możliwość przejścia w tryb sprawdzania, gdzie:
+W ramach projektu 3 należy przygotować aplikację internetową, która pozwala testować wpływ rozmaitych błędów wizualizacyjnych na percepcję danych przedstawionych na wykresie. 
+Aplikcja powinna zawierać przynajmniej **pięć** wykresów przedstawiających częste błędy wizualizacyjne (np. zbędny trzeci wymiar, wykresy kołowe) oraz pola w których użytkownik może wprowadzić informacje odczytane z wykresu, a także możliwość przejścia w tryb sprawdzania, gdzie:
  
  - użytkownik porówna wprowadzone przez siebie wartości z rzeczywistymi,
  - użytkownik zobaczy porównanie poprawnego wykresu z niepoprawnym.
