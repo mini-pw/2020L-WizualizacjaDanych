@@ -30,6 +30,8 @@ Zespół 2: Józef Jasek, Przemysław Kaleta, Maciej Krawczyk, Tomasz Zalewski
 Zespół 1: Damian Rakus, Michał Urawski, Karol Ulanowski, Damian Kryński, Maciej Wasiak
 
 Zespół 2: Michał Możdżonek, Jakub Waszkiewicz, Adam Wawrzeńczyk, Marcin Zakrzewski, Renard Korzeniowski
+* Repozytorium: https://github.com/adamw00000/WD2
+* Strona internetowa: https://best-wd2-app.herokuapp.com/
 
 Zespół 3: Franek Grymuła, Jeremiasz Wołosiuk, Łukasz Osowicki, Łukasz Pałys, Michał Dyczko
 
