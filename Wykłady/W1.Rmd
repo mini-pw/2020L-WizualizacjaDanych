@@ -1,7 +1,7 @@
 ---
 title: "Wizualizacja danych I"
 author: "Michał Burdukiewicz"
-date: "01-12-2019"
+date: "26-02-2020"
 output: 
   ioslides_presentation:
     theme: "simplex"
@@ -101,7 +101,7 @@ ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width)) +
 ```
 
 **Oś X:** Sepal.Length.
-**Oś Y:** Petal.Length.
+**Oś Y:** Sepal.Width.
 
 ## Atrybuty wizualne 
 
@@ -111,8 +111,19 @@ ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
 ```
 
 **Oś X:** Sepal.Length.
-**Oś Y:** Petal.Length.
+**Oś Y:** Sepal.Width.
 **Kolor:** Species.
+
+## Atrybuty wizualne 
+
+```{r, echo=FALSE,warning=FALSE}
+ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Sepal.Length)) +
+  geom_point(size = 4)
+```
+
+**Oś X:** Sepal.Length.
+**Oś Y:** Sepal.Width.
+**Kolor:** Sepal.Length
 
 ## Atrybuty wizualne 
 

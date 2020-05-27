@@ -1,0 +1,105 @@
+---
+title: "Zadanie dodatkowe 1"
+author: "Damian Kryński"
+date: "29 02 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Treść zadania
+Dla jakiej najmniejszej liczby *n* studentów może podzielić się *l* razy na *k*-osobowe grupy, aby za każdym razem każdy student był w grupie z innymi studentami.
+
+Rozwiązanie przedstaw również w postaci graficznej (może być interaktywna) dla różnych wartości *n*, *l* i *k*. Szczególnie uwzględnij *l* = 3, *k* = 4 i *n* = 36.
+
+## Rozwiązanie zadania 
+
+Warto zauważyć, że:
+
+* liczba $k$ jest dzielnikiem liczby $n$, ponieważ grupy muszą być pełne: $n \space\%\space k = 0$,
+* każdemu studentowi potrzebne jest $(k-1)\cdot l$ innych studentów, by odbyć $l$ laboratoriów,
+* jeśli $k>l$ to liczba studentów musi być $\geq k^2$ bo inaczej już podczas drugiego laboratorium wystąpi problem. 
+* jeśli $k>l$ to $k^2$ jest liczbą studentów wystarczającą do przeprowadzenia $l$ laboratoriów przy powyższych założeniach 
+
+
+Rozwiązaniem zadanego problemu będzie więc: 
+
+* najmniejsza liczba $n$ podzielna przez $k$, która jest większa od $1 + (k-1) * l$ dla $k < l$
+* $k^2$ dla $k \geq l$
+
+***
+## Rozwiązanie dla różnych liczb laboratoriów i ilości osób w grupie. 
+```{r echo = FALSE}
+min_students <- function(k,l) {
+  if (k<l) {
+    m <- 1 + (k-1) * l 
+    r <- m %% k 
+    if (r != 0)
+      m <- m + (k - r)
+  }
+  else {
+    m <- k* k
+  }
+  m
+}
+
+l <- cumsum(rep(1,36))
+k <- cumsum(rep(1,36))
+
+m <- matrix(0,nrow = 36, ncol = 36)
+for (i in k){
+  for (j in l){
+    m[i,j] <- min_students(k=i,l=j)
+  }
+}
+p <- data.frame(m[1:15,1:15],row.names = paste("k=" ,as.character(1:15), sep=""))
+colnames(p) <- paste("l=", as.character(1:15), sep="")
+knitr::kable(p, caption="Minimalna liczba studentów potrzebna do spełnienia wymogów zadania dla l laboratoriów i k-osobowych grup")
+```
+   
+***
+## Dla 4-osobowych grup (k=4)
+```{r, echo=FALSE}
+plot(x=1:10, 
+     y=m[4,2:11], 
+     type="b", 
+     xlab="l - liczba laboratoriów", 
+     ylab="n -wymagana ilość studentów", 
+     bg="yellow",
+     xlim=c(1,12),
+     ylim=c(0,40)
+     )
+text(1:10,m[4,2:11]-2,m[4,2:11])
+```
+   
+***
+## Dla 3 laboratoriów (l=3)
+```{r, echo=FALSE}
+plot(x=2:7, 
+     y=m[2:7,3], 
+     type="b", 
+     xlab="k - ilość osób w grupie", 
+     ylab="n -wymagana ilość studentów", 
+     bg="yellow",
+     xlim=c(1,8),
+     ylim=c(0,100)
+     )
+text(2:7,m[2:7,3]+10,m[2:7,3])
+```
+   
+***
+## Jakie parametry można przyjąć dla 36 studentóW? 
+```{r, echo=FALSE}
+less_than_36 <- data.frame(which(m<=36, arr.ind = TRUE))
+colnames(less_than_36)[1] <- "k - liczba osób w grupie"
+colnames(less_than_36)[2] <- "l- liczba laboratoriów"
+plot(less_than_36)
+```
+
+
+
+
+
+

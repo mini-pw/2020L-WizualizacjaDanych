@@ -1,0 +1,168 @@
+---
+title: "Narzędzia do wizualizacji danych"
+author: "Michał Burdukiewicz"
+date: "18.03.2020"
+output: 
+  ioslides_presentation:
+    theme: "simplex"
+---
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+<style>
+slides > slide {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Projekt 1
+
+1. Forma: statyczna grafika, ale już nie plakat A3.
+2. Termin oddania: 8.04.2020, podczas wykładu zdalna prezentacja zespołu.
+3. 7.04.2020 od 16:30 do 17:00 można przetestować prezentację na Google Meet. 
+
+## Narzędzia
+
+1. Programistyczne (R, Python, JavaScript)
+2. Programy graficzne (Inkscape).
+3. Programy dedykowane do wizualizacji danych (Tableau).
+
+## Języki wizualizacji danych
+
+```{r,message=FALSE}
+library(ggplot2)
+library(plotly)
+ggplot(cbind(expand.grid(x = c("Imperatywne\n", "Deklaratywne\n"),
+                         y = c("Proste do użycia", "Wszechstronne")), 
+             software = c("Seaborn", "Bokeh\nR (ggplot2)\nLeaflet\nVega-Lite",  "Matplotlib\nR (base, grid)", "BQPlot\nD3\nPlotly\nVega")),
+       aes(x = x, y = y, label = software)) +
+  geom_tile(fill = NA, color = "black") +
+  geom_text()  +
+  theme_void() +
+  theme(axis.text = element_text(color = "black"))
+```
+
+## Podział narzędzi do wizualizacji danych
+
+Deklaratywne:
+
+ - zadanie: warunki jakie musi spełniać wizualizacja,
+ - jak wizualizacja jest wykonywana jest rozstrzygane wewnętrznie i niezależnie od użytkownika,
+ - oddzielenie specyfikacji od wykonania.
+
+Imperatywne:
+
+ - zadanie: krok po kroku jak stworzyć wizualizację,
+ - użytkownik w pełni kontroluje każdy detal wizualizacji,
+ - jeśli warunki jakie musi spełniać wizualizacja zmienią się nawet odrobinę, instrukcja tworzenia może się zmienić znacząco.
+
+## Altair (Python)
+
+https://altair-viz.github.io/gallery/simple_bar_chart.html
+
+https://altair-viz.github.io/gallery/scatter_tooltips.html
+
+https://altair-viz.github.io/gallery/line_with_ci.html
+
+## Altair (Python)
+
+Pythonowe API dla Vega-Lite.
+
+Brian Granger, uzasadniając stworzenie Altaira: *I love Python, but do my visualisations using R/ggplot2*.
+
+## Altair (Python)
+
+- Małe wsparcie dla typowo stastycznych wizualizacji
+
+Pakiet R: https://github.com/vegawidget/altair (używa reticulate).
+
+## bokeh (Python)
+
+https://demo.bokeh.org/movies
+
+## bokeh (Python)
+
+- Python jako API do BokehJS,
+- praca głownie w Pythonie, JSowy silnik mało dostępny i źle udokumentowany,
+- całe dashboardy.
+
+## bokeh (R)
+
+- implementacja w R: https://github.com/bokeh/rbokeh
+- ostatni commit: 26.04.2017
+
+## Leaflet 
+
+[Leaflet.js](https://leafletjs.com/): interaktywne mapy.
+
+## Leaflet
+
+W R: https://rstudio.github.io/leaflet/
+
+W Pythonie: https://github.com/python-visualization/folium
+
+## matplotlib (Python)
+
+https://matplotlib.org/
+
+## matplotlib (Python)
+
+- trudne zarządzanie czasem na osiach,
+- niesatysfakcjonujące mapowanie do kształtów.
+
+Rozszerzenia: https://mpld3.github.io/
+
+## plot.ly
+
+```{r, echo=FALSE,warning=FALSE}
+
+gg <- ggplot(midwest, aes(x=area, y=poptotal)) + 
+  geom_point(aes(col=state)) + 
+  geom_smooth(method="loess", se=F) + 
+  xlim(c(0, 0.1)) + 
+  ylim(c(0, 500000)) + 
+  scale_color_discrete("") +
+  labs(y="Population", 
+       x="Area") +
+  theme_bw()
+
+ggplotly(gg)
+```
+
+## seaborn
+
+https://seaborn.pydata.org/ - oparte na matplotlib.
+
+Świetne szablony wizualizacji!
+
+## Vega-Lite
+
+Pakiety w R: https://github.com/hrbrmstr/vegalite i https://github.com/vegawidget/vegawidget
+
+## Vega
+
+JSONowa specyfikacja wizualizacji.
+
+Lyra (nie zniechęcać się http://vega.github.io/lyra/).
+
+Lyra 1.0 jest online i działa satysfakcjonująco: http://idl.cs.washington.edu/projects/lyra/.
+
+## Programy graficzne 
+
+Inkscape: darmowy i otwarty edytor grafiki wektorowej.
+
+ - [Oficjalny tutorial](https://inkscape.org/en/doc/basic/tutorial-basic.pl.html).
+ - [Inkscape w praktyce](https://pl.wikibooks.org/wiki/Inkscape_w_praktyce).
