@@ -8,11 +8,10 @@ Aplikcja powinna zawierać przynajmniej **pięć** wykresów przedstawiających 
 
 Aplikacja powinna być dostępna online.
 
-Projekty można realizować z osobami z innej grupy ćwiczeniowej w grupie do 5 osób. Za projekt 1 można otrzymać do 100 punktów z czego:
+Projekty można realizować z osobami z innej grupy ćwiczeniowej w grupie do 5 osób. Za projekt 3 można otrzymać do 100 punktów z czego:
 
-- 5 punktów za każdą prezentację postępów w projekcie podczas spotkania projektowego. Za każdą konsultację uznaje się przedyskutowanie z prowadzącym postępów w pracy nad projektem podczas spotkania projektowego.
-- od 0 do 40 punktów za poprawność projektu (np. starannie wykonane wykresy).
-od 0 do 25 punktów za dodatkowy wysiłek włożony w projekt (np. wyszukanie błędów wizualizacyjnych, które nie były wprowadzone na wykładzie).
+- od 0 do 45 punktów za poprawność projektu (np. starannie wykonane wykresy).
+- od 0 do 25 punktów za dodatkowy wysiłek włożony w projekt (np. wyszukanie błędów wizualizacyjnych, które nie były wprowadzone na wykładzie).
 - od 0 do 30 punktów za ciekawą prezentację projektu w postaci filmiku.
 
 Termin oddania projektu: 10-17.06.2020, 14:00. 
