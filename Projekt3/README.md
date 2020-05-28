@@ -20,4 +20,5 @@ Do 1.06. proszę zgłosić w repozytorium przedmiotu skład zespołu.
 
 ## Zgłoszone zespoły
 
+Zespół 1: Adam Wawrzeńczyk, Damian Rakus, Piotr Sowiński, Agata Nielipińska, Jeremiasz Wołosiuk
 
