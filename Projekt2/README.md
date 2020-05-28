@@ -25,6 +25,8 @@ Każdy zespół powinien przypisać się do jednego z zaproponowanych tematów d
 Zespół 1: Michał Bortkiewicz, Jakub Kała, Krzysztof Spaliński
 
 Zespół 2: Józef Jasek, Przemysław Kaleta, Maciej Krawczyk, Tomasz Zalewski
+* Repozytorium: https://github.com/kaletap/interactive-vis
+* Strona internetowa: http://wd2.herokuapp.com/
 
 ### Temat 2
 Zespół 1: Damian Rakus, Michał Urawski, Karol Ulanowski, Damian Kryński, Maciej Wasiak
