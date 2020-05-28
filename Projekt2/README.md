@@ -36,7 +36,9 @@ Zespół 3: Franek Grymuła, Jeremiasz Wołosiuk, Łukasz Osowicki, Łukasz Pał
 ### Temat 3
 Zespół 1: Igor Marczak, Krzysztof Palczewski, Maciej Pawłowski, Sebastian Safin, Piotr Sowiński
 
-Zespół 2: Agata Nielipińska, Michał Rdzany, Wojciech Socha, Anna Szymańska, Wojciech Zieliński
+Zespół 2: Agata Nielipińska, Michał Rdzany, Wojciech Socha, Anna Szymańska, Wojciech Zieliński  
+:floppy_disk:[repozytorium](https://github.com/rdzanyM/county_business_pl)  
+:bar_chart:[aplikacja](https://county-pl-map.herokuapp.com/)  
 
 Zespół 3: Łukasz Kiełbus, Tomasz Nawrocki, Kamil Ruta, Krzysztof Więcław, Michał Sokólski
 
