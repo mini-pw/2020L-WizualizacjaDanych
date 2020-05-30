@@ -1,0 +1,89 @@
+---
+title: "Prawidłowe odczytywanie danych z wykresów"
+author: "Michał Burdukiewicz"
+date: "27-05-2020"
+output: 
+  ioslides_presentation:
+    theme: "simplex"
+---
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+<style>
+slides > slide {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+</style>
+
+## Projekt 2
+
+```{r,echo=FALSE,message=FALSE}
+library(ggplot2)
+
+dat <- read.csv("Projekt 2 konkurs (Responses) - Form responses 1.csv") 
+colnames(dat) <- c("timestamp", "group")
+
+ggplot(dat, aes(x = group)) +
+  geom_bar() +
+  scale_x_discrete("Grupa") +
+  scale_y_continuous("Liczba głosów") +
+  theme_bw()
+```
+
+## Projekt 2
+
+*Dzięki narzędziu chłopaków dowiedziałem się, że najprawdopodobniej moja firma przetrwa najbliższe dwa lata. Skoro przetrwa najbliższe dwa lata, a według wielu najbliższe dwa lata będą gospodarczo najtrudniejsze od lat 20. no to może uda się też przetrwać i dłużej, także dla mnie bardzo pozytywne przesłanie aplikacji i całej prezentacji.*
+
+## Projekt 2
+
+ - Proszę dodać linki do aplikacji i repozytorium w repozytorium przedmiotu.
+ - Oceny są w USOS.
+
+## Projekt 3
+
+W ramach projektu 3 należy przygotować aplikację internetową, która pozwala testować wpływ rozmaitych błędów wizualizacyjnych na percepcję danych przedstawionych na wykresie. 
+Aplikcja powinna zawierać przynajmniej **pięć** wykresów przedstawiających częste błędy wizualizacyjne (np. zbędny trzeci wymiar, wykresy kołowe) oraz pola w których użytkownik może wprowadzić informacje odczytane z wykresu, a także możliwość przejścia w tryb sprawdzania, gdzie:
+ 
+ - użytkownik porówna wprowadzone przez siebie wartości z rzeczywistymi,
+ - użytkownik zobaczy porównanie poprawnego wykresu z niepoprawnym.
+
+## Projekt 3
+
+Projekty można realizować z osobami z innej grupy ćwiczeniowej w grupie do 5 osób. Za projekt 3 można otrzymać do 100 punktów z czego:
+
+- od 0 do 45 punktów za poprawność projektu (np. starannie wykonane wykresy).
+- od 0 do 25 punktów za dodatkowy wysiłek włożony w projekt (np. wyszukanie błędów wizualizacyjnych, które nie były wprowadzone na wykładzie).
+- od 0 do 30 punktów za ciekawą prezentację projektu w postaci filmiku.
+
+## Projekt 3
+
+Termin oddania projektu: 10-17.06.2020, 14:00. 
+
+Do 1.06. proszę zgłosić w repozytorium przedmiotu skład zespołu.
+
+## Przykłady problemów wizualizacyjnych
+
+Czytelność wykresu: poprawność odczytania danych przedstawionych na wykresie.
+
+## Wykresy kołowe
+
+<a href="https://eagereyes.org/wp-content/uploads/2016/06/aaa-error.png"><img src="https://eagereyes.org/wp-content/uploads/2016/06/aaa-error.png" width="600px"></a>
+
+Źródło: https://eagereyes.org/
+
+## Wykresy kołowe
+
+[Drew Skau, Robert Kosara, Arcs, Angles, or Areas: Individual Data Encodings in Pie and Donut Charts, EuroVis 2016](https://kosara.net/publications/Skau-EuroVis-2016.html)
+
+## Porównywanie pól
+
+[Robert Kosara, The Impact of Distribution and Chart Type on Part-to-Whole Comparisons. In Short Paper Proceedings of the Eurographics/IEEE VGTC Symposium on Visualization, 2019](https://kosara.net/papers/2019/Kosara-EuroVis-2019b.pdf)

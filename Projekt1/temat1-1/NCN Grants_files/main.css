@@ -1,0 +1,75 @@
+body{
+    background: #fafafa;
+}
+
+div.container{
+    background: #fff;
+    box-shadow: 0 0 5px 5px #dee2e6;
+    border-bottom: 20px solid rgb(5,113,178);
+}
+
+h2, h3, h4, h5, h6{
+    /* border-top: 2px solid rgb(5,113,178); */
+    border-bottom: 2px solid rgb(5,113,178);
+    border-right: 20px solid rgb(5,113,178);
+    color: rgb(5,113,178);
+    padding: 10px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+h1{
+    border-top: 2px solid rgb(5,113,178);
+    border-bottom: 2px solid rgb(5,113,178);
+    border-right: 20px solid rgb(5,113,178);
+    border-left: 20px solid rgb(5,113,178);
+    color: rgb(5,113,178);
+    padding: 10px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.table td, .table th{
+    padding: 5px;
+}
+
+.table tr > td:nth-child(1){
+    color: rgb(5,113,178);
+    font-weight: 600;
+}
+
+.table th{
+    color: #fff;
+    background-color: rgb(5,113,178);
+}
+
+.statistic{
+    font-size: 30pt;
+    font-weight: 600;
+    color: rgb(5,113,178);
+}
+
+.formal-figure{
+    font-size: 60pt;
+    text-align: right;
+    color: rgb(142, 212, 255);
+    float:right; 
+    padding: 3px 8px;
+    margin: 0 0 10px 15px;
+    line-height: 70px;
+    background: #fff;
+}
+.formal-box{
+    background: #fafafa; border: 1px solid rgb(193, 231, 255); height: 100%;
+    font-size: 11.5pt;
+}
+
+ul{
+    list-style: square;
+}
+.source-caption{
+    margin: 10px 0;
+    font-style: italic;
+    font-size: 10pt;
+    color: #777;
+}
