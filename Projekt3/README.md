@@ -23,3 +23,5 @@ Do 1.06. proszę zgłosić w repozytorium przedmiotu skład zespołu.
 Zespół 1: Adam Wawrzeńczyk, Damian Rakus, Piotr Sowiński, Agata Nielipińska, Jeremiasz Wołosiuk
 
 Zespół 2: Marcin Zakrzewski, Tomasz Zalewski, Michał Urawski, Krzysztof Spaliński, Maciej Pawłowski
+
+Zespół 3: Michał Bortkiewicz, Michał Dyczko, Damian Kryński, Jakub Kała, Franciszek Grymuła, Kamil Ruta
