@@ -27,3 +27,5 @@ Zespół 2: Marcin Zakrzewski, Tomasz Zalewski, Michał Urawski, Krzysztof Spali
 Zespół 3: Michał Bortkiewicz, Michał Dyczko, Damian Kryński, Jakub Kała, Franciszek Grymuła, Kamil Ruta
 
 Zespół 4: Józef Jasek, Michał Rdzany, Igor Marczak, Michał Możdżonek, Michał Sokólski
+
+Zespół 5: Tomasz Nawrocki, Anna Szymańska, Łukasz Pałys, Maciej Wasiak, Renard Korzeniowski
