@@ -23,6 +23,8 @@ Każdy zespół powinien przypisać się do jednego z zaproponowanych tematów d
 ### Temat 1
 
 Zespół 1: Michał Bortkiewicz, Jakub Kała, Krzysztof Spaliński
+* Repozytorium: https://github.com/jakubkala/data-visualisation-ceidg
+* Strona internetowa: https://micha-bortkiewicz.shinyapps.io/biznis_app/
 
 Zespół 2: Józef Jasek, Przemysław Kaleta, Maciej Krawczyk, Tomasz Zalewski
 * Repozytorium: https://github.com/kaletap/interactive-vis
