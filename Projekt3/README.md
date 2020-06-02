@@ -24,4 +24,4 @@ Zespół 1: Adam Wawrzeńczyk, Damian Rakus, Piotr Sowiński, Agata Nielipińska
 
 Zespół 2: Marcin Zakrzewski, Tomasz Zalewski, Michał Urawski, Krzysztof Spaliński, Maciej Pawłowski
 
-Zespół 3: Michał Bortkiewicz, Michał Dyczko, Damian Kryński, Jakub Kała, Franciszek Grymuła
+Zespół 3: Michał Bortkiewicz, Michał Dyczko, Damian Kryński, Jakub Kała, Franciszek Grymuła, Kamil Ruta
