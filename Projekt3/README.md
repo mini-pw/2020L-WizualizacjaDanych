@@ -12,7 +12,7 @@ Projekty można realizować z osobami z innej grupy ćwiczeniowej w grupie do 5 
 
 - od 0 do 45 punktów za poprawność projektu (np. starannie wykonane wykresy).
 - od 0 do 25 punktów za dodatkowy wysiłek włożony w projekt (np. wyszukanie błędów wizualizacyjnych, które nie były wprowadzone na wykładzie).
-- od 0 do 30 punktów za ciekawą prezentację projektu w postaci filmiku.
+- od 0 do 30 punktów za ciekawą prezentację projektu w postaci filmiku (do 5 minut).
 
 Termin oddania projektu: 10-17.06.2020, 14:00. 
 
