@@ -13,11 +13,11 @@ Strona przedmiotu [Wizualizacja danych 1120-DS000-MSP-0114](https://usosweb.usos
 | 08.04. | Prezentacja projektu 1 |     |
 | 15.04. | Interaktywne wizualizacje danych I | Wstęp do Shiny      |
 | 22.04. | Interaktywne wizualizacje danych II | Projekt 2           |
-| 06.05. |        | Projekt 2           |
-| 13.05. |        | Projekt 2           |
+| 06.05. | Narzędzia do interaktywnych wizualizacji danych | Projekt 2           |
+| 13.05. | Projektowanie dashboardów | Projekt 2           |
 | 20.05  | Prezentacja projektu 2 |     |
-| 27.05  |        | Projekt 3           |
-| 03.06  |        | Projekt 3           |
+| 27.05  | Prawidłowe odczytywanie danych z wykresów | Projekt 3           |
+| 03.06  | Prawidłowe odczytywanie danych z wykresów | Projekt 3           |
 | 10.06  |        |                     |
 
 ## Warunki zaliczenia
