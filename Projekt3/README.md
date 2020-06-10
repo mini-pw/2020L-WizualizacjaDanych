@@ -18,6 +18,8 @@ Termin oddania projektu: 10-17.06.2020, 14:00.
 
 Do 1.06. proszę zgłosić w repozytorium przedmiotu skład zespołu.
 
+Przygotowane filmiki proszę umieścić jako niepubliczne filmy na YouTube, a linki do nich i do repozytoriów dodać jako pull requesty do projektu.
+
 ## Zgłoszone zespoły
 
 Zespół 1: Adam Wawrzeńczyk, Damian Rakus, Piotr Sowiński, Agata Nielipińska, Jeremiasz Wołosiuk
