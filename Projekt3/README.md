@@ -25,7 +25,7 @@ Przygotowane filmiki proszę umieścić jako niepubliczne filmy na YouTube, a li
 Zespół 1: Adam Wawrzeńczyk, Damian Rakus, Piotr Sowiński, Agata Nielipińska, Jeremiasz Wołosiuk
 ### Linki ###
 * Repozytorium: https://github.com/rakusd/rakusd.github.io
-* Filmik: https://www.youtube.com/watch?v=VTm1KBaoOjw&fbclid=IwAR0_Bg5wUCdIRHVr4b0ACUyZm7HCWrugmfAGlnGkuaet0Wqpue7Zmasla2w
+* Filmik: https://www.youtube.com/watch?v=VTm1KBaoOjw
 * Aplikacja: https://rakusd.github.io/
 
 Zespół 2: Marcin Zakrzewski, Tomasz Zalewski, Michał Urawski, Krzysztof Spaliński, Maciej Pawłowski
