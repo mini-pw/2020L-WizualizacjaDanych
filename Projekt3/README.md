@@ -39,3 +39,8 @@ Zespół 5: Łukasz Kiełbus, Sebastian Safin, Wojciech Zieliński, Przemysław 
 Zespół 6: Tomasz Nawrocki, Anna Szymańska, Łukasz Pałys, Maciej Wasiak, Renard Korzeniowski
 
 Zespół 7: Krzysztof Palczewski, Karol Ulanowski, Jakub Waszkiewicz, Łukasz Osowicki, Krzysztof Więcław
+
+* Repozytorium: https://github.com/Kubskiii/WD3
+* Filmik: https://youtu.be/wSCqUFdpgw8
+* Aplikacja: http://erystrea.pl:8050/
+
