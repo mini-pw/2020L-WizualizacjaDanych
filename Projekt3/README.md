@@ -31,6 +31,9 @@ Zespół 1: Adam Wawrzeńczyk, Damian Rakus, Piotr Sowiński, Agata Nielipińska
 Zespół 2: Marcin Zakrzewski, Tomasz Zalewski, Michał Urawski, Krzysztof Spaliński, Maciej Pawłowski
 
 Zespół 3: Michał Bortkiewicz, Michał Dyczko, Damian Kryński, Jakub Kała, Franciszek Grymuła, Kamil Ruta
+### Linki ###
+* Repozytorium: https://github.com/jakubkala/data-visualization-project-3
+* Filmik: https://youtu.be/-RID5LqznFE
 
 Zespół 4: Józef Jasek, Michał Rdzany, Igor Marczak, Michał Możdżonek, Michał Sokólski
 
