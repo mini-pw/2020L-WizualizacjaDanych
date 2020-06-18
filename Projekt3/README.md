@@ -52,6 +52,9 @@ Zespół 5: Łukasz Kiełbus, Sebastian Safin, Wojciech Zieliński, Przemysław 
 * Aplikacja: https://wd3-my-dash-app.herokuapp.com/
 
 Zespół 6: Tomasz Nawrocki, Anna Szymańska, Łukasz Pałys, Maciej Wasiak, Renard Korzeniowski
+### Linki ###
+* Repozytorium: https://github.com/szymanska/WD3
+* Filmik: https://youtu.be/m59AIp3DY2k
 
 Zespół 7: Krzysztof Palczewski, Karol Ulanowski, Jakub Waszkiewicz, Łukasz Osowicki, Krzysztof Więcław
 
