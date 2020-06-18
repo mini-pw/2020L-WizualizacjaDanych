@@ -41,6 +41,10 @@ Zespół 3: Michał Bortkiewicz, Michał Dyczko, Damian Kryński, Jakub Kała, F
 
 Zespół 4: Józef Jasek, Michał Rdzany, Igor Marczak, Michał Możdżonek, Michał Sokólski
 
+- [Repozytorium](https://gitlab.com/igro_m23/data_visualisation_3)
+- [Filmik](https://youtu.be/PUx4G9gWz24)
+- [Aplikacja](https://visu-quiz.herokuapp.com/#0)
+
 Zespół 5: Łukasz Kiełbus, Sebastian Safin, Wojciech Zieliński, Przemysław Kaleta, Maciej Krawczyk, Wojciech Socha
 
 Zespół 6: Tomasz Nawrocki, Anna Szymańska, Łukasz Pałys, Maciej Wasiak, Renard Korzeniowski
