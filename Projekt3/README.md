@@ -46,6 +46,10 @@ Zespół 4: Józef Jasek, Michał Rdzany, Igor Marczak, Michał Możdżonek, Mic
 - [Aplikacja](https://visu-quiz.herokuapp.com/#0)
 
 Zespół 5: Łukasz Kiełbus, Sebastian Safin, Wojciech Zieliński, Przemysław Kaleta, Maciej Krawczyk, Wojciech Socha
+### Linki ###
+* Repozytorium: https://github.com/seba174/wizualizacjadanych3
+* Filmik: https://drive.google.com/file/d/1eD-2vPpUJ1eC9qiSdfIKm3otBrxSIGau/view?usp=sharing
+* Aplikacja: https://wd3-my-dash-app.herokuapp.com/
 
 Zespół 6: Tomasz Nawrocki, Anna Szymańska, Łukasz Pałys, Maciej Wasiak, Renard Korzeniowski
 
