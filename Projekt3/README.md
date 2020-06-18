@@ -29,6 +29,10 @@ Zespół 1: Adam Wawrzeńczyk, Damian Rakus, Piotr Sowiński, Agata Nielipińska
 * Aplikacja: https://rakusd.github.io/
 
 Zespół 2: Marcin Zakrzewski, Tomasz Zalewski, Michał Urawski, Krzysztof Spaliński, Maciej Pawłowski
+### Linki ###
+* Repozytorium: https://github.com/krzysztofspalinski/data-visualization-project-3
+* Filmik: https://youtu.be/8eZEt5Xme-Y
+* Aplikacja: https://top5badvisualizationchallenge.herokuapp.com
 
 Zespół 3: Michał Bortkiewicz, Michał Dyczko, Damian Kryński, Jakub Kała, Franciszek Grymuła, Kamil Ruta
 ### Linki ###
